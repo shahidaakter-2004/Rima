@@ -1,0 +1,172 @@
+/* *CSS Variable */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{ 
+    --PrimaryColor: #ffcc00;
+    --SeconderyColor: #353535 ;
+    --PrimaryFont: "Poppins" , sans-serif ;
+    --SeconderyFont: "PT Sans" , sans-serif;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.containar{
+    width: 1110px;
+    margin:auto;
+}
+
+a{
+    text-decoration: none;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+body{
+    font-family: var(--PrimaryFont) ; 
+}
+
+
+.align-center{
+    align-items: center;
+}
+
+/* *End of common CSS */
+
+
+
+
+.btn{
+    border-radius: 20px;
+    background-color: var(--PrimaryColor) ;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 180%;
+    padding: 16px 45px;
+    display: inline-block;
+    color: #ffffff;
+}
+.btn.outline{
+    padding: 16px 18px;
+    background-color: transparent;
+    border: 1px solid var(--SeconderyColor) ;
+    color: var(--SeconderyColor);
+}
+
+
+
+
+
+
+
+/* * Navbar start here */
+nav .logo{
+    width: 30%;
+}
+nave .menu{
+    width:70%;
+    text-align: right;
+}
+nav .menu li{
+    display: inline-block;
+    
+}
+
+nav .menu li a{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 200%;
+    color: var(--SeconderyColor) ;
+    text-transform: uppercase;
+    padding: 18px 22px 5px;
+    display: block;
+    position: relative;
+}
+nav .menu li a::before{
+    content: " " ;
+    width: 0%;
+    height:1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--SeconderyColor) ;
+    transition: 0.35s;
+}
+nav .menu li .active::before
+nav .menu li:hover a::before{
+    width: 100%;
+}
+
+/* * Navbar ends here */
+
+
+
+
+
+
+
+
+
+
+
+
+/* *Banner start here */
+#banner{
+    padding: 56px 0 155px;
+}
+#banner .bannerCnt{ 
+    color:  var(--SeconderyColor);
+    width: 53%;
+}
+ 
+
+    
+#banner .bannerImg{
+    width: 47%;
+}
+ 
+#banner .bannerCnt h4{
+    font-weight: 400;
+    font-size: 24px;
+}   
+#banner .bannerCnt h1{
+    font-weight: 700;
+    font-size: 64px;
+    margin: 15px 0 25px;
+} 
+#banner .bannerCnt p{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 180%;
+    margin-bottom: 45px;
+}
+
+
+#banner .outline{
+    margin-left: 40px;
+}
+/* *Banner ends here */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
